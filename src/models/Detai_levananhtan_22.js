@@ -9,13 +9,13 @@ const detaiSchema = mongoose.Schema(
       type: String,
       required: true,
       trim: true,
-      char:20,
+      maxLength: 20,
     },
     TenDT: {
       type: String,
       required: true,
       trim: true,
-      char: 30,
+     maxLength: 30,
     },
     KinhPhi: {
       type: input,
@@ -24,7 +24,7 @@ const detaiSchema = mongoose.Schema(
         type: String,
         required: true,
         trim: true,
-        char: 30,
+        maxLength:: 30,
     }
   },
   {
